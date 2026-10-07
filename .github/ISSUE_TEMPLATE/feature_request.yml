@@ -1,0 +1,20 @@
+name: Suggest a feature
+description: Suggest an improvement or a new import format.
+title: "Feature: "
+body:
+  - type: markdown
+    attributes:
+      value: "Feature requests are public. Please avoid sharing private document content."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the task you're trying to complete.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested behavior
+    validations:
+      required: true

@@ -1,0 +1,46 @@
+name: Report a problem
+description: Tell us about a Universal Importer bug. Reports are public; do not share confidential PDFs.
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for reporting a problem. GitHub issues are public. Please do not attach private PDFs, filenames containing personal details, passwords, or document contents."
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Describe the visible result or error message without including confidential document data.
+      placeholder: "The plugin showed an error after I clicked Import…"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include PDF characteristics (page count, approximate size, images/fonts) without uploading the original file.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version, if known
+      placeholder: "1.2.0"
+  - type: dropdown
+    id: system
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Other / unknown
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional details
+      description: Optional. Screenshots are useful after hiding personal or confidential information.

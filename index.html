@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help, documentation, and issue reporting for Universal Importer, the PDF-to-editable-layers plugin for Figma.">
+  <title>Universal Importer — Help & support</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="#top"><img src="assets/logo.png" alt="" width="40" height="40"><span>Universal Importer</span></a>
+    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a><a href="#privacy">Privacy</a><a href="#support">Support</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="eyebrow">HELP & SUPPORT</div>
+      <h1>PDFs into Figma.<br><span>Layers you can edit.</span></h1>
+      <p>Universal Importer turns PDF pages into separate Figma objects where the PDF structure allows it. This page explains what to expect and how to report a problem.</p>
+      <div class="actions"><a class="button primary" href="https://github.com/Friedrich-29/universal-importer/issues/new?template=bug_report.yml">Report a problem</a><a class="button secondary" href="https://github.com/Friedrich-29/universal-importer/issues/new?template=feature_request.yml">Suggest a feature</a></div>
+      <p class="small">GitHub reports are public and require a GitHub account. Please don't attach private PDFs or personal information.</p>
+    </section>
+    <section id="how-it-works" class="section wrap">
+      <div class="section-title"><span>01</span><h2>How to import</h2></div>
+      <div class="steps">
+        <article><strong>Choose a PDF</strong><p>Open the plugin in a Figma Design file and select a PDF from your computer. You can also drag it into the plugin window.</p></article>
+        <article><strong>Choose your settings</strong><p>Import all pages or one page. Keep text and vectors editable where possible, include images, and group each page in a frame.</p></article>
+        <article><strong>Edit the result</strong><p>Click “View imported pages” after import. Expand the page frame in Figma’s Layers panel to select individual objects.</p></article>
+      </div>
+    </section>
+    <section id="faq" class="section wrap">
+      <div class="section-title"><span>02</span><h2>Frequently asked questions</h2></div>
+      <div class="faq">
+        <article><h3>Why can’t I edit some words as text?</h3><p>Many PDFs store letters as vector outlines. They remain editable vector shapes, but the original characters and font can’t be recovered reliably without OCR.</p></article>
+        <article><h3>Why does a font look different?</h3><p>Figma can only use fonts available in its environment. The plugin substitutes an available font and shows an import note when it cannot match one.</p></article>
+        <article><h3>Why does a gradient or mask look different?</h3><p>Complex PDF effects may be simplified in editable mode. Choose <strong>Page image</strong> in the plugin’s page settings when visual fidelity matters more than separate layers.</p></article>
+        <article><h3>What are the limits?</h3><p>The current release imports PDFs up to 50 MB, with up to 100 pages per run. AI and EPS import are not available yet.</p></article>
+      </div>
+    </section>
+    <section id="privacy" class="section wrap">
+      <div class="section-title"><span>03</span><h2>Privacy</h2></div>
+      <div class="note"><p>The plugin processes your PDF locally in its Figma window and does not send the PDF, its filename, or its contents to the developer. It has no external network access. Imported layers become part of your Figma file and are handled by Figma’s normal sync behavior.</p><p>This initial release does not send usage analytics or automatic error reports. If you report a problem through GitHub, only the information you choose to submit is posted publicly.</p></div>
+    </section>
+    <section id="support" class="section wrap support">
+      <div><div class="section-title"><span>04</span><h2>Need help?</h2></div><p>Tell us what happened, what you expected, and the steps to reproduce it. Please omit confidential document content.</p></div>
+      <a class="button primary" href="https://github.com/Friedrich-29/universal-importer/issues/new/choose">Open a support request</a>
+    </section>
+  </main>
+  <footer class="wrap"><span>Universal Importer · Free PDF import for Figma</span><a href="https://github.com/Friedrich-29/universal-importer">GitHub repository</a></footer>
+</body>
+</html>
